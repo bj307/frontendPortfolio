@@ -10,7 +10,8 @@ import { environment } from 'src/environments/environment';
 export class TransferenciaService {
 
   private listaTransferencia: any[];
-  private url = 'https://my-json-server.typicode.com/bj307/backendPortfolio/transferencias';
+  private url = `${environment.baseUrl}transferencias`;
+  private urlTwo = 'https://my-json-server.typicode.com/bj307/backendPortfolio/transferencias';
 
   constructor(private httpClient: HttpClient) { 
     this.listaTransferencia = [];
@@ -26,7 +27,7 @@ export class TransferenciaService {
 
   adicionar(transferencia: Transferencia): Observable<Transferencia>{
     this.tratar(transferencia)
-    return this.httpClient.post<Transferencia>(this.url, transferencia)
+    return this.httpClient.post<Transferencia>(this.urlTwo, transferencia)
   }
 
   private tratar(transferencia: any){
