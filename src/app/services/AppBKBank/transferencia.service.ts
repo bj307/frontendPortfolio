@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 export class TransferenciaService {
 
   private listaTransferencia: any[];
-  private url = `${environment.baseUrl}transferencias`;
+  private url = 'https://my-json-server.typicode.com/bj307/backendPortfolio/transferencias';
 
   constructor(private httpClient: HttpClient) { 
     this.listaTransferencia = [];

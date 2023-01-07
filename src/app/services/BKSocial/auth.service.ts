@@ -10,7 +10,7 @@ export class AuthService {
 
   constructor(private httpCliente: HttpClient) { }
 
-  private url = `${environment.baseUrl}usuario`;
+  private url = 'https://my-json-server.typicode.com/bj307/backendPortfolio/Usuario';
 
   autenticar(usuario: string, senha: string): Observable<any> {
     return this.httpCliente.post(this.url, {
