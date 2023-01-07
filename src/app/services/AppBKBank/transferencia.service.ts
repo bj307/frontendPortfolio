@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Transferencia } from 'src/app/models/transferencia.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { Transferencia } from 'src/app/models/transferencia.model';
 export class TransferenciaService {
 
   private listaTransferencia: any[];
-  private url = 'http://localhost:3000/transferencias';
+  private url = `${environment.baseUrl}transferencias`;
 
   constructor(private httpClient: HttpClient) { 
     this.listaTransferencia = [];
