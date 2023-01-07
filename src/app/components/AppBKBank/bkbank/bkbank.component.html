@@ -1,0 +1,16 @@
+<div class="example-form">
+    <h2>Nova Transferência</h2>
+    <form class="formulario" (ngSubmit)="transferir()">
+        <mat-form-field appearance="outline" class="formField">
+            <mat-label>Valor</mat-label>
+            <input matInput type="number" [(ngModel)]="valor" name="valor" placeholder="R$ 100,00">
+            <mat-icon matSuffix>paid</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formField">
+            <mat-label>Destino</mat-label>
+            <input matInput type="number" [(ngModel)]="destino" name="destino" placeholder="1533-1">
+            <mat-icon matSuffix>account_balance</mat-icon>
+        </mat-form-field>
+        <button mat-flat-button color="primary" type="submit">Transferir</button>
+    </form>
+</div>

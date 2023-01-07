@@ -1,0 +1,20 @@
+.example-form {
+    background-color: white;
+    min-width: 100px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.transacao {
+    min-width: 80px;
+    max-width: 480px;
+    background-color: bisque;
+    border: solid 1px;
+    border-color: burlywood;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+}

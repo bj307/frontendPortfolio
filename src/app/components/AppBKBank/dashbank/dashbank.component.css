@@ -1,0 +1,10 @@
+.tabGrupo{
+    min-width: 100px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mdc-tab__text-label {
+    color: white;
+}

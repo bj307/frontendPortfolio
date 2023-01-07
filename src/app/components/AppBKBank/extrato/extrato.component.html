@@ -1,0 +1,18 @@
+<div class="example-form">
+    <h2>Extrato</h2>
+    <div *ngIf="transferencia.length > 0; else extratoVazio">
+        <div *ngFor="let transferencia of transferencia">
+            <div class="transacao">
+                <td>
+                    <p>Valor: {{transferencia?.valor | currency: "BRL"}}</p>
+                    <p>Destino: {{transferencia?.destino}}</p>
+                    <p>Data: {{transferencia?.data | date: "medium"}}</p>
+                </td>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #extratoVazio>
+    <p>Sem transações hoje</p>
+</ng-template>
