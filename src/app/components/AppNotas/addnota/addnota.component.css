@@ -1,0 +1,49 @@
+.container {
+    margin: 0 auto;
+}
+
+.example-form {
+
+    min-width: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+textarea {
+    min-height: 60px;
+}
+
+.container-radio {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.cardModelo1 {
+    padding-bottom: 15px;
+}
+
+.avatar1 {
+    background-image: url(../../../../assets/img/0006.png);
+    background-size: cover;
+}
+
+mat-card-title{
+    font-size: 16px;
+}
+
+.avatar2 {
+    background-image: url(../../../../assets/img/0003.png);
+    background-size: cover;
+}

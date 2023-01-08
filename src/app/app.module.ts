@@ -24,6 +24,10 @@ import { ExtratoComponent } from './components/AppBKBank/extrato/extrato.compone
 import localePt from '@angular/common/locales/pt'
 import { registerLocaleData } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { NotasComponent } from './components/AppNotas/notas/notas.component';
+import { AddnotaComponent } from './components/AppNotas/addnota/addnota.component';
+import { MatRadioModule } from '@angular/material/radio';
+
 
 registerLocaleData(localePt, 'pt');
 
@@ -35,7 +39,9 @@ registerLocaleData(localePt, 'pt');
     BodyComponent,
     BkbankComponent,
     DashbankComponent,
-    ExtratoComponent
+    ExtratoComponent,
+    NotasComponent,
+    AddnotaComponent
   ],
   imports: [
     BrowserModule,
@@ -54,12 +60,13 @@ registerLocaleData(localePt, 'pt');
     MatButtonToggleModule,
     MatTabsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatRadioModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
-    {provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL'}
-],
+    { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

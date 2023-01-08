@@ -1,0 +1,11 @@
+.logoNotas {
+    height: 60px;
+    width: auto;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.minhasNotas, .row {
+    background-color: antiquewhite;
+}
+
