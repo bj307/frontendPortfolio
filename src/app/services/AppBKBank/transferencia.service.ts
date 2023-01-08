@@ -22,7 +22,7 @@ export class TransferenciaService {
   }
 
   extratoCompleto(): Observable<Transferencia[]>{
-    return this.httpClient.get<Transferencia[]>(this.url)
+    return this.httpClient.get<Transferencia[]>(this.urlTwo)
   }
 
   adicionar(transferencia: Transferencia): Observable<Transferencia>{
